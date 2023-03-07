@@ -17,7 +17,7 @@ public class FilterConfig {
                         .uri("http://localhost:8081"))
                 .route(r -> r.path("/second-service/**")
                         .filters(f -> f.addRequestHeader("second-request", "second-request-header")
-                                .addResponseHeader("second-response", "second-response-header"))
+                                       .addResponseHeader("second-response", "second-response-header"))
                         .uri("http://localhost:8082"))
                 .build();
     }
