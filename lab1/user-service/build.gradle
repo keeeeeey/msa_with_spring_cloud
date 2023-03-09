@@ -31,6 +31,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     runtimeOnly 'com.h2database:h2'
+
+    // validation
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    // modelmapper
+    implementation group: 'org.modelmapper', name: 'modelmapper', version: '2.3.8'
 }
 
 dependencyManagement {
