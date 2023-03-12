@@ -41,6 +41,15 @@ dependencies {
 
     // JsonWebToken
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+    // spring-cloud-starter-config
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-config', version: '4.0.1'
+
+    // spring-cloud-start-bootstrap
+    implementation group: 'org.springframework.cloud', name: 'spring-cloud-starter-bootstrap', version: '4.0.1'
+
+    // springboot-starter-actuator
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
 }
 
 dependencyManagement {
