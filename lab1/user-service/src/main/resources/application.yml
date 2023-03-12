@@ -5,6 +5,8 @@ server:
 spring:
   application:
     name: user-service
+  profiles:
+    active: dev
   cloud:
     config:
       name: ecommerce
