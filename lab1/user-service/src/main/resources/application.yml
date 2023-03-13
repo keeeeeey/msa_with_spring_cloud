@@ -5,11 +5,16 @@ server:
 spring:
   application:
     name: user-service
-  profiles:
-    active: dev
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+#  profiles:
+#    active: dev
   cloud:
     config:
-      name: ecommerce
+      name: config-service
   config:
     import: "optional:configserver:http://localhost:8888/"
   h2:
@@ -50,7 +55,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, beans
+        include: refresh, health, beans, busrefresh
 
 #token:
 #  expiration_time: 86400000
