@@ -23,7 +23,7 @@ spring:
 #    active: dev
   cloud:
     config:
-      name: config-service
+      name: ecommerce
     gateway:
       default-filters:
         - name: GlobalFilter
