@@ -18,7 +18,7 @@ spring:
           search-locations: file://${user.home}/Desktop/Work/native-file-repo
         git:
 #          uri: file:///Users/kimkiyun/Desktop/Work/git-local-repo
-          uri: https://github.com/keeeeeey/spring-cloud-config.git
+          uri: https://github.com/joneconsulting/spring-cloud-config
 #          username: [your username]
 #          password: [your password]
 
@@ -28,11 +28,11 @@ management:
       exposure:
         include: health, busrefresh
 
-encrypt:
+#encrypt:
 #  key: abcdefghijklmnopqrstuvwxyz0123456789
-  key-store:
-    location: file://${user.home}/Desktop/Work/keystore/apiEncryptionKey.jks
+#  key-store:
+#    location: file://${user.home}/Desktop/Work/keystore/apiEncryptionKey.jks
 #    location: file:/apiEncryptionKey.jks
 #    location: file:///apiEncryptionKey.jks
-    password: test1234
-    alias: apiEncryptionKey
+#    password: test1234
+#    alias: apiEncryptionKey
